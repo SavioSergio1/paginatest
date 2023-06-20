@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Advent Pro';
+}
+
+header, nav, main{
+display: flex;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(180deg, #5373ad, #aac6fa, #ffffff);
+    flex-wrap: wrap;
+}
+
+header {
+    order: 0;
+    flex: 1 1 100vw;
+    /* width: calc(100vw - 110px);
+    position: relative;
+    left: 110px; */
+    background-color: rgba(170, 198, 250, 0.5);
+    padding: 20px 0;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+    font-weight: 150;
+    letter-spacing: 2px;
+}
+
+#h-titulo {
+    width: 80%;
+
+}
+
+nav{
+    order: 1;
+    flex: 1 1 100vw;
+}
+
+.logo{
+    display: none;
+}
+span#burguer{
+    display: none;
+}
+
+menu{
+    display: block;
+}
+
+.menu-lateral {
+    /* display: block;
+    width: 110px;
+    height: 100%; */
+    background-color: #AAC6FA;
+    /* padding: 40px 0 20px 1%;
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: 1px 1px 8px;  */
+
+
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: 0.3s;
+    z-index: 5; */
+}
+
+
+/* .menu-lateral:hover {
+    width: 200px;
+    justify-content: start;
+}
+
+.expandir {
+    width: 100%;
+    padding-left: 13px;
+    margin-bottom: 50px;
+}
+
+.expandir>i {
+    color: black;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.expandir>i:hover {
+    background: #AAC6FA;
+    opacity: 0.2;
+}
+
+.material-symbols-outlined {
+    font-size: 35px !important;
+}
+
+ul {
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.op-menu {
+    transition: 0.3s;
+}
+
+ul li.op-menu:hover {
+    background: #AAC6FA;
+    opacity: 0.2;
+
+}
+
+ul li.op-menu a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 18px 26px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 0.5rem;
+}
+
+ul li.op-menu a .texto {
+    margin-left: 50px;
+}
+
+ul li.op-menu a .icone>i {
+    font-size: 30px;
+    margin-left: 10px;
+
+}
+
+ul li.logout {
+    position: absolute;
+    bottom: 0;
+} */
+
+hr {
+    display: none;
+    /* width: 95%; 
+    align-items: left; 
+    size: 1px; 
+    color: gray;
+    margin-bottom: 10px;
+    margin-top: 10px; */
+}
+
+
+main{
+    order:2;
+    flex: 1 1 500px;
+    /* height: calc(100vh - 85px);
+    width: calc(100vw - 110px);
+    position: relative;
+    left: 110px; */
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    margin: 2rem;
+    width: 29%;
+}
+
+form>input[type=submit] {
+    display: block;
+    width: 40%;
+    padding: 5px 15px;
+    margin: auto;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+
+.card {
+    background-color: rgba(83, 115, 173, 0.5);
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 30px;
+
+}
+
+.card>h1 {
+    margin: 20px;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.textfield {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px;
+}
+
+.textfield>input {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 12pt;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield>input::placeholder {
+    color: black;
+}
+
+.textfield input {
+    background-color: rgba(83, 115, 173, 0.5);
+}
+
+
+@media screen and (min-width: 993px){
+    header{
+        width: calc(100vw - 110px);
+        position: relative;
+        left: 110px; 
+    }
+
+    .menu-lateral {
+        display: block;
+        width: 110px;
+        height: 100%;
+        padding: 40px 0 20px 1%;
+        border-radius: 0px 10px 10px 0px;
+        box-shadow: 1px 1px 8px;
+    
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        transition: 0.3s;
+        z-index: 5;
+    }
+    
+    hr {
+        width: 95%; 
+        align-items: left; 
+        size: 1px; 
+        color: gray;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    main{
+        height: calc(100vh - 85px);
+        width: calc(100vw - 110px);
+        position: relative;
+        left: 110px;
+    }
+
+    .card {
+        width: 100%;
+        height: 65%;
+    }
+
+    .menu-lateral:hover {
+        width: 200px;
+        justify-content: start;
+    }
+    
+    .expandir {
+        width: 100%;
+        padding-left: 13px;
+        margin-bottom: 50px;
+    }
+    
+    .expandir>i {
+        color: black;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    
+    .expandir>i:hover {
+        background: #AAC6FA;
+        opacity: 0.2;
+    }
+    
+    .material-symbols-outlined {
+        font-size: 35px !important;
+    }
+    
+    ul {
+        height: 100%;
+        list-style-type: none;
+    }
+    
+    ul li.op-menu {
+        transition: 0.3s;
+    }
+    
+    ul li.op-menu:hover {
+        background: #AAC6FA;
+        opacity: 0.2;
+    
+    }
+    
+    ul li.op-menu a {
+        color: black;
+        text-decoration: none;
+        font-size: 20px;
+        padding: 18px 26px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        line-height: 40px;
+    }
+    
+    .logo {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-right: 0.5rem;
+    }
+    
+    ul li.op-menu a .texto {
+        margin-left: 50px;
+    }
+    
+    ul li.op-menu a .icone>i {
+        font-size: 30px;
+        margin-left: 10px;
+    
+    }
+    
+    ul li.logout {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+
+    nav{
+    justify-content: center;
+    }
+    menu, ul, li {
+    display: flex;
+    }
+
+    menu > ul > li {
+    width: 80px;
+    height: 46px;
+    margin: 0px 15px;
+    padding: 10px 2px;
+    text-decoration: none;
+    text-align: center;
+    justify-items: center;
+    background-color: beige;
+    border-radius: 5px;
+    }
+    
+    main{
+        margin-top: 10px;
+    }
+
+}
+
+
+@media screen and (max-width: 767px){
+
+    header {
+        width: 100vw;
+        height: 70px;
+        }
+
+    nav {
+        display: block;
+        }
+
+    .logo{
+        display: none;
+    }
+    
+    menu{
+        display: none;
+    }
+
+    span#burguer{
+        display: block;
+        text-align: center;
+        padding: 10px 0px;
+    }
+    .menu > ul {
+        list-style-type: none;
+    }
+
+    span#burguer:hover{
+        background-color: #dce8ff;
+        color: black;
+    }
+
+    .menu-lateral > menu > ul > li > a{
+        display: block;
+        padding: 10px 0px;
+        text-decoration: none;
+        text-align: center;
+        background-color: beige;
+        border-top: 2px solid white;
+    }
+
+    .menu-lateral> menu > ul > li > a:hover{
+        background-color: rgb(163, 163, 146);
+    }
+
+    main {
+        flex: 1 1 90vw;
+        margin-top: 20px;
+        }
+
+    div#form{
+        width: 80%;
+        max-width: 390px;
+        height: 50%;
+
+    }
+    
+    .card{
+        padding: 15px 0;
+    }
+}
