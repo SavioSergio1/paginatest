@@ -261,6 +261,7 @@ form>input[type=submit] {
     }
     
     hr {
+        display: block;
         width: 95%; 
         align-items: left; 
         size: 1px; 
