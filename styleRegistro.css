@@ -271,7 +271,7 @@ form>input[type=submit] {
     }
 
     main{
-        height: calc(100vh - 85px);
+        height: calc(100vh - 83px);
         width: calc(100vw - 110px);
         position: relative;
         left: 110px;
